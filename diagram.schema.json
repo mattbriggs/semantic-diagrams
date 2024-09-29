@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "type": { 
+      "type": "string",
+      "enum": ["graph", "flowchart", "erDiagram", "classDiagram"]
+    },
+    "things": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "type": { "type": "string" }
+        },
+        "required": ["id", "label"]
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "type": { 
+            "type": "string",
+            "enum": ["directed", "undirected"]
+          }
+        },
+        "required": ["source", "target", "type"]
+      }
+    },
+    "containers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "container": { "type": "string" },
+          "contains": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["container", "contains"]
+      }
+    }
+  },
+  "required": ["name", "type", "things"],
+  "additionalProperties": false
+}

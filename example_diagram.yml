@@ -1,0 +1,34 @@
+title: "Sample HTML Page"
+subtitle: "A Demonstration of YAML to HTML Conversion"
+description: "This page was generated from a YAML file."
+summary: "The YAML file describes the structure of this page, including a diagram."
+
+# Diagram Section
+diagram:
+  name: "Vehicle Class Diagram"
+  type: "classDiagram"
+  things:
+    - id: "Vehicle"
+      label: "Vehicle"
+    - id: "Car"
+      label: "Car"
+    - id: "Bike"
+      label: "Bike"
+    - id: "Motorcycle"
+      label: "Motorcycle"
+  relationships:
+    - source: "Vehicle"
+      target: "Car"
+      type: "directed"
+    - source: "Vehicle"
+      target: "Bike"
+      type: "directed"
+    - source: "Vehicle"
+      target: "Motorcycle"
+      type: "directed"
+  containers:
+    - container: "Vehicle"
+      contains:
+        - "Car"
+        - "Bike"
+        - "Motorcycle"

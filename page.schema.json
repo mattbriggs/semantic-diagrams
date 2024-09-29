@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "description": { "type": "string" },
+    "summary": { "type": "string" },
+    "diagram": { "$ref": "file:///C:/git/mb/semantic-diagrams/diagram.schema.json" }
+  },
+  "required": ["title", "description", "summary"],
+  "additionalProperties": false
+}
