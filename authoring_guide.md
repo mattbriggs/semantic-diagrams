@@ -1,5 +1,3 @@
-Sure thing! Here’s the complete authoring guide in a single markdown file, along with detailed explanations of the script’s operations and the expected outputs.
-
 # Authoring Guide for Diagram YAML Files
 
 ## Overview
@@ -138,7 +136,3 @@ The above command will read the `example_diagram.yml` file, validate it, generat
   ```
 
 - **Invalid Diagram Type**: Make sure that the `type` in the `diagram` section is one of the supported values (`graph`, `flowchart`, `erDiagram`, `classDiagram`).
-
----
-
-Let me know if that helps or if you need any changes!
