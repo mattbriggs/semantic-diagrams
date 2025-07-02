@@ -1,36 +1,4 @@
-# Semantic Diagrams
-
-Creating visual diagrams is a critical part of communicating complex systems, relationships, and workflows. However, not all diagrams are created equal. There are distinct approaches to diagramming based on the toolset and methodology used. This project focuses on **semantic diagrams** and **diagrams as code**, which contrast significantly from traditional tools like Microsoft Visio or Adobe Illustrator.
-
-### Semantic Diagrams vs. Diagrams as Code
-
-**Semantic diagrams** are more than visual representations—they are structured, data-driven diagrams that encode meaning using a defined schema. This approach prioritizes the relationships and types of components in the diagram, enabling tools and scripts to understand the underlying data, not just the visual appearance. When defining a semantic diagram, each element (e.g., nodes, edges, containers) is given a unique identifier and contextual metadata, making it possible to derive insights, validate structures, or even transform diagrams into other formats programmatically.
-
-**Diagrams as code** refer to creating diagrams using text-based representations, often in a markup language or code syntax. This allows diagrams to be version-controlled, easily updated, and generated using automated processes. Tools like `mermaid.js` and `Graphviz` use this approach, enabling developers and data engineers to generate diagrams directly from codebases, configuration files, or structured data formats like YAML or JSON.
-
-### How Does This Differ from Traditional Diagram Tools?
-
-Traditional diagram tools such as Microsoft Visio or Adobe Illustrator are **visual-first**. They focus on enabling designers and diagram creators to draw and customize shapes, lines, and styles. While these tools are powerful for creating visually rich and polished diagrams, they lack:
-
-1. **Semantic Context**: In traditional tools, the diagram's meaning is visual and often lacks structured metadata. For example, a rectangle might visually represent a database in one context and a server in another, but without standardized metadata, there's no way to distinguish between them programmatically.
-
-2. **Scalability and Automation**: Updating or generating large-scale diagrams manually in tools like Visio can be time-consuming and error-prone. Diagrams as code, in contrast, allow for batch generation, easy updates through version control, and automation via scripts.
-
-3. **Interoperability**: Semantic diagrams can be exported, transformed, or even queried, making them suitable for integration with other systems or knowledge management frameworks. Traditional diagrams are often stored as binary or proprietary formats that are less suitable for integration with data pipelines or analysis tools.
-
-### Why Choose Semantic Diagrams and Diagrams as Code?
-
-1. **Automation**: Generate diagrams dynamically based on data, which is useful in environments with frequent updates or large-scale systems.
-2. **Standardization**: Ensure consistency and adherence to diagramming standards, making it easier to share and understand diagrams across teams.
-3. **Integration**: Leverage structured data and semantics to integrate diagrams into larger knowledge management systems, making them not just visual aids but interactive, data-driven assets.
-
-### Use Case Example: Generating a Class Diagram from YAML
-
-In this project, you can define a semantic diagram using a YAML file that describes entities and relationships. The script then processes this structured data, validates it against a schema, and generates a visual representation using `mermaid.js`. The resulting HTML page and PNG file not only look correct but are also semantically correct, enabling downstream use in documentation systems, process automation, and interoperability with other tools.
-
-By using semantic diagrams and diagrams as code, you can transform the way you create, update, and share visual information, making your diagrams more than just static images, but dynamic, meaningful parts of your workflow.
-
-## YAML to HTML Diagram Generator
+## Semantic Diagrams: YAML to HTML Diagram Generator
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow.svg)
